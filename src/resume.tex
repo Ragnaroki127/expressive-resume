@@ -1,44 +1,50 @@
 \documentclass{ExpressiveResume}
-
 % ----- Resume -----
 \begin{document}
 
 % ----- Name + Contact Information -----
 \resumeheader[
-    firstname=John,
-    middleinitial=N,
-    lastname=Doe,
-    email=john.doe@example.com,
-    phone=123-456-7890,
-    linkedin=johndoe,
-    github=johndoe,
-    city=Town,
-    state=State,
-    qrcode=./images/qr.png,
+    firstname=Haoxin,
+    lastname=Yan,
+    email=yanhaoxin1207@gmail.com,
+    phone=+86-13121226081,
+    city=Beijing,
+    state=China,
     fixobjectivespacing=true
 ]
 
-\objective{A software engineering graduate with 2 years of work
-    experience at various internships \\ seeking opportunities to develop
-    web/mobile applications for Company XYZ.}
+\objective{Passionate AI engineer working on efficient AI algorithms for mobile camera systems}
 
 % ----- Education -----
 \section{Education}
 
-\experience{Bachelor of Science}{Software Engineering}{Aug 2018}{May 2022}{
-    \noindent Fabulous Honors College \hfill GPA: 4.00 \newline
-    Super Duper University, Town, State \newline
+\experience{Tsinghua University}{M.Eng. Instrument and Meter Engineering}{August 2019}{August 2022}{
+    \noindent Tsinghua-RWTH double degree program \newline
+    \noindent Thesis: Deep Transfer Learning Research on Industrial Defect Detection
+}
+
+\experience{RWTH Aachen University}{M.Sc. Production Systems Engineering}{October 2019}{August 2020}{
+    \noindent Tsinghua-RWTH double degree program \newline
+    \noindent Thesis: Deep-Learning-Driven Reconstruction of Optical Diagnostic Data of Turbulent Combustion
+}
+
+\experience{Beihang University}{B.Sc. Instrumentation Engineering}{September 2015}{July 2019}{
+    \noindent Courses: Digital Imaging Processing, Deep Learning, etc. \newline
 }
 
 % ----- Work Experience -----
 \section{Work Experience}
 
-\experience{Summer Intern}{Radiant Software Systems}{Aug 2021}{May 2021}{
+\experience{Algorithm Engineer}{Xiaomi Corporation}{Aug 2022}{now}{
+    \noindent Working towards enabling camera AI algorithms on power-constraint mobile devices for better image quality and user experience.
     \achievement{
-
-        Developed a mobile app in \tech{React Native} that was
-        downloaded 100k times on Google Play.
-
+        \tech{Video Raw Denoising}: 
+            \achievement{
+                A comprehensive solution for AI video denoising given any specific sensor. We established a complete process from noise model calibration, public image  unprocessing, baseline model training to finetuning using real-world collected samples.
+            }
+            \achievement{
+                Quantization
+            }
     }
     \achievement{
 
