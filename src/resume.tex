@@ -8,12 +8,13 @@
     lastname=Yan,
     email=yanhaoxin1207@gmail.com,
     phone=+86-13121226081,
+    linkedin=haoxin-yan-83052b29a,
     city=Beijing,
     state=China,
     fixobjectivespacing=true
 ]
 
-\objective{Passionate AI engineer working on efficient AI algorithms for mobile camera systems}
+{\centering Passionate AI engineer working on efficient AI algorithms for mobile camera systems \par}
 
 % ----- Education -----
 \section{Education}
@@ -29,41 +30,58 @@
 }
 
 \experience{Beihang University}{B.Sc. Instrumentation Engineering}{September 2015}{July 2019}{
-    \noindent Courses: Digital Imaging Processing, Deep Learning, etc. \newline
+    \noindent Courses: Digital Imaging Processing, Geometric and Physical Optics, Deep Learning etc. \newline
 }
 
 % ----- Work Experience -----
 \section{Work Experience}
 
-\experience{Algorithm Engineer}{Xiaomi Corporation}{Aug 2022}{now}{
-    \noindent Working towards enabling camera AI algorithms on power-constraint mobile devices for better image quality and user experience.
+\experience{Algorithm Engineer}{Xiaomi - New Business Department}{Aug 2022}{now}{
+    \noindent Working towards enabling camera AI algorithms on power-constraint mobile devices for better user experience.
     \achievement{
-        \tech{Video Raw Denoising}: 
-            \achievement{
-                A comprehensive solution for AI video denoising given any specific sensor. We established a complete process from noise model calibration, public image  unprocessing, baseline model training to finetuning using real-world collected samples.
-            }
-            \achievement{
-                Quantization
-            }
+        \tech{AI Video Raw Denoising}: 
+        \achievement{
+            A comprehensive solution for AI video denoising given any specific sensor. We established a complete process including noise model calibration, RGB-to-Raw unprocessing, baseline model training and finetuning using real-world samples.
+        }
+        \achievement{
+            Participated in \tech{model deployment} on a high-end mobile platform. Worked on floating-point model training and mixed-precision model quantization (including PTQ and QAT). The resulting NPU inference performance is \tech{80fps@4K}.
+        }
+        \achievement{
+            Independently responsible for a research project for \tech{night-mode capture preview}. The algorithm is expected to combine bayer downsampling and denoising which would decrease power consumption (lower resolution) and reduce noise for higher possible brightness. The quantized model achieved \tech{better detail and noise performance} than existing platforms (PQ certified).
+        }
     }
     \achievement{
-
-        Collaborated in an \tech{Agile/Scrum} team of 8 engineers to
-        deliver new features every 2 weeks.
-
+        \tech{AI-PP2PD (Autofocus)}
+        \achievement{
+            Being core of the overall autofocus algorithm (PDAF), ai-pp2pd (phase pixel to phase difference) aims at calculating the distance between two phase pixel raw images, hence determining the ideal in-focus motor position.
+        }
+        \achievement{
+            Responsible for developing the complete training and evaluating scheme of ai-pp2pd. We train the network in two subsequent phases, using artificial samples generated from public datasets and collected raw images labeled with CDAF algorithms. The results on test set show a significantly higher accuray than traditional algorithm (\tech{0.98 vs 0.83}). 
+        }
+        \achievement{
+            We carefully designed the model structure to meet the stringent power budget. The total computaional power of the model is reduced to \tech{0.5 GFLOPs} after quantization. 
+        }
+    }
+    \achievement{
+        \tech{ISP/DPU Auto Calibration}
+        \achievement{
+            Worked on an offline platform for efficient ISP/DPU parameter auto-calibration. The system utilized optimization algorithms (tpe, nsga...) to find the optimal parameter combination that achieves best image quality (measured in IQA).
+        }
+        \achievement{
+            Adapted ISP brightness modules and DPU pipeline to existing auto-calibration platform. Developed \tech{parameter generation methods} and \tech{IQA algorithms} according to different systems. The auto-calibrated parameters achieved better performance than parameters calibrated by hand in several PQs.
+        }
+        \achievement{
+            Explored and developed new auto-calibration framework based on \tech{deep reinforcement learning algorithms}. The new framework can access various reinforcement methods (HPO, TRPO, etc.) which achieves twice as fast convergence speed on DPU autotuning tasks (800 rounds vs 2000 rounds).
+        }
     }
 }
 
 % ----- Technical Projects -----
-\section{Technical Projects}
+\section{Skills}
+\noindent Python, PyTorch, NumPy, C++, OpenCV... \\
 
-\experience{Expressive Resume}{Personal Project}{Nov 2021}{Dec 2021}{
-    \achievement{
-
-        Created a \tech{\LaTeX} class that makes it easy for anyone to
-        quickly create a beautiful resume and cover letter.
-
-    }
-}
+\section{Publications}
+\noindent [1] Li, C., \tech{Yan, H.}, Qian, X., Zhu, S., Zhu, P., Liao, C., ... Li, X. (2023). A domain adaptation YOLOv5 model for industrial defect inspection. Measurement, 213, 112725. (Co-author) \\
+\noindent [2] Li, C., \tech{Yan, H.}, Zhu, S., Hong, Y., Zhu, P., Wen, Y., Tian, H., Liao, C., Li, X., Wang, X. and Qian, X., 2023, January. A feature-based transfer-YOLOv5 model for rapid defect inspection in large mass magnetic tile manufacturing. In Optoelectronic Imaging and Multimedia Technology IX (Vol. 12317, pp. 251-256). SPIE. (Co-author)
 
 \end{document}
