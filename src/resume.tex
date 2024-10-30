@@ -14,71 +14,71 @@
     fixobjectivespacing=true
 ]
 
-{\centering Passionate AI engineer working on efficient AI algorithms for mobile camera systems \par}
+{\centering Passionate machine learning engineer working on efficient AI algorithms for mobile camera systems. \vspace{0.2cm} \par}
 
 % ----- Education -----
 \section{Education}
 
-\experience{Tsinghua University}{M.Eng. Instrument and Meter Engineering}{August 2019}{August 2022}{
+\experience{Tsinghua University}{M.Eng. Instrument and Meter Engineering}{Aug. 2019}{Aug. 2022}{
     \noindent Tsinghua-RWTH double degree program \newline
     \noindent Thesis: Deep Transfer Learning Research on Industrial Defect Detection
 }
 
-\experience{RWTH Aachen University}{M.Sc. Production Systems Engineering}{October 2019}{August 2020}{
+\experience{RWTH Aachen University}{M.Sc. Production Systems Engineering}{Oct. 2019}{Aug. 2020}{
     \noindent Tsinghua-RWTH double degree program \newline
     \noindent Thesis: Deep-Learning-Driven Reconstruction of Optical Diagnostic Data of Turbulent Combustion
 }
 
-\experience{Beihang University}{B.Sc. Instrumentation Engineering}{September 2015}{July 2019}{
-    \noindent Courses: Digital Imaging Processing, Geometric and Physical Optics, Deep Learning etc. \newline
+\experience{Beihang University}{B.Sc. Instrumentation Engineering}{Sept. 2015}{Jul. 2019}{
+    \noindent Courses: Digital Imaging Processing, Geometric and Physical Optics, Machine Learning etc. \newline
 }
 
 % ----- Work Experience -----
 \section{Work Experience}
 
-\experience{Algorithm Engineer}{Xiaomi - New Business Department}{Aug 2022}{now}{
-    \noindent Working towards enabling camera AI algorithms on power-constraint mobile devices for better user experience.
+\experience{Xiaomi Corporation - New Business Department}{Algorithm Engineer}{Aug 2022}{present}{
+    {\centering Working towards enabling camera AI algorithms on power-constrained mobile devices for better user experience. \par}
     \achievement{
         \tech{AI Video Raw Denoising}: 
         \achievement{
-            A comprehensive solution for AI video denoising given any specific sensor. We established a complete process including noise model calibration, RGB-to-Raw unprocessing, baseline model training and finetuning using real-world samples.
+            Contributed to a comprehensive solution for AI video denoising given any specific sensor. We established a complete process including noise model calibration, RGB-to-Raw unprocessing, baseline model training and fine-tuning using real-world samples.
         }
         \achievement{
-            Participated in \tech{model deployment} on a high-end mobile platform. Worked on floating-point model training and mixed-precision model quantization (including PTQ and QAT). The resulting NPU inference performance is \tech{80fps@4K}.
+            Played a key role in \tech{model deployment} on a high-end mobile platform which involves floating-point model training and mixed-precision model quantization (including PTQ and QAT). The resulting NPU inference performance is \tech{80fps@4K}.
         }
         \achievement{
-            Independently responsible for a research project for \tech{night-mode capture preview}. The algorithm is expected to combine bayer downsampling and denoising which would decrease power consumption (lower resolution) and reduce noise for higher possible brightness. The quantized model achieved \tech{better detail and noise performance} than existing platforms (PQ certified).
+            Led a research project for \tech{night-mode capture preview}. The algorithm is expected to combine bayer downsampling and denoising which would decrease power consumption (lower resolution) and reduce noise for increased brightness. The quantized model achieved \tech{better detail and noise performance} than existing platforms (PQ certified).
         }
     }
     \achievement{
         \tech{AI-PP2PD (Autofocus)}
         \achievement{
-            Being core of the overall autofocus algorithm (PDAF), ai-pp2pd (phase pixel to phase difference) aims at calculating the distance between two phase pixel raw images, hence determining the ideal in-focus motor position.
+            Participated in project proposal and algorithm definition for AI-PP2PD. As a core component of the overall autofocus algorithm (PDAF), AI-PP2PD (phase pixel to phase difference) aims at calculating the distance between two phase pixel raw images, hence determining the ideal in-focus motor position.
         }
         \achievement{
-            Responsible for developing the complete training and evaluating scheme of ai-pp2pd. We train the network in two subsequent phases, using artificial samples generated from public datasets and collected raw images labeled with CDAF algorithms. The results on test set show a significantly higher accuray than traditional algorithm (\tech{0.98 vs 0.83}). 
+            Developed the complete training and evaluation scheme of AI-PP2PD. We train the network in two subsequent phases, using artificial samples generated from public datasets and collected raw images labeled with CDAF (Contrast Detection AF) algorithms. The results on test set show a significantly higher accuracy than traditional algorithm (\tech{0.98 vs 0.83}). 
         }
         \achievement{
-            We carefully designed the model structure to meet the stringent power budget. The total computaional power of the model is reduced to \tech{0.5 GFLOPs} after quantization. 
+            Experimented with different model architectures to meet the stringent power budget. The total computational power of the model is reduced to \tech{0.5 GFLOPs} after quantization. 
         }
     }
     \achievement{
         \tech{ISP/DPU Auto Calibration}
         \achievement{
-            Worked on an offline platform for efficient ISP/DPU parameter auto-calibration. The system utilized optimization algorithms (tpe, nsga...) to find the optimal parameter combination that achieves best image quality (measured in IQA).
+            Worked on an offline platform for efficient ISP/DPU parameter auto-calibration. The system utilized optimization algorithms (tpe, nsga...) to find the optimal parameter combination that achieves the best image quality (measured in IQA).
         }
         \achievement{
             Adapted ISP brightness modules and DPU pipeline to existing auto-calibration platform. Developed \tech{parameter generation methods} and \tech{IQA algorithms} according to different systems. The auto-calibrated parameters achieved better performance than parameters calibrated by hand in several PQs.
         }
         \achievement{
-            Explored and developed new auto-calibration framework based on \tech{deep reinforcement learning algorithms}. The new framework can access various reinforcement methods (HPO, TRPO, etc.) which achieves twice as fast convergence speed on DPU autotuning tasks (800 rounds vs 2000 rounds).
+            Explored and developed new auto-calibration framework based on \tech{deep reinforcement learning algorithms}. The new framework can access various reinforcement methods (HPO, TRPO, etc.), which achieves twice as fast convergence speed on DPU autotuning tasks (800 rounds vs 2000 rounds).
         }
     }
 }
 
 % ----- Technical Projects -----
 \section{Skills}
-\noindent Python, PyTorch, NumPy, C++, OpenCV... \\
+\noindent Python, PyTorch, NumPy, C++, OpenCV, \LaTeX \\ 
 
 \section{Publications}
 \noindent [1] Li, C., \tech{Yan, H.}, Qian, X., Zhu, S., Zhu, P., Liao, C., ... Li, X. (2023). A domain adaptation YOLOv5 model for industrial defect inspection. Measurement, 213, 112725. (Co-author) \\
